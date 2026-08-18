@@ -1,0 +1,20 @@
+# GitHub repo metadata for freebase-cloud/free-postgres-hosting
+
+DESCRIPTION (About field / Google title tag):
+Free PostgreSQL hosting in 2026 — a maintained comparison of every real free Postgres option
+
+HOMEPAGE:
+https://freebase.cloud
+
+TOPICS (11):
+postgres
+postgresql
+free
+hosting
+database
+dbaas
+cloud-database
+comparison
+free-tier
+serverless-postgres
+developer-tools

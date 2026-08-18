@@ -1,0 +1,35 @@
+# freebase.cloud — free cloud databases, MCP-ready: https://freebase.cloud
+name: verify-table
+
+on:
+  push:
+    paths:
+      - "providers.yaml"
+      - "compare.py"
+      - "README.md"
+      - ".github/workflows/verify-table.yml"
+  pull_request:
+  schedule:
+    # Monday 06:00 UTC — flags rows whose sources have not been re-read.
+    - cron: "0 6 * * 1"
+
+jobs:
+  table:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: README table matches providers.yaml
+        run: python3 compare.py --check
+
+      - name: Report rows overdue for re-verification
+        # Advisory only: a stale row is a prompt to re-read the source,
+        # not a reason to block a pull request.
+        continue-on-error: true
+        run: python3 compare.py --stale 90
