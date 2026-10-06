@@ -92,15 +92,19 @@ providers:
     url: https://www.prisma.io/pricing
     status: live
     free_tier: free plan
-    expiry: none stated
+    expiry: no time limit; hard cap on the free plan
     card: "no"
-    access: Prisma client / driver adapter
+    access: native wire protocol (PostgreSQL 17)
     best_at: >-
-      If your project is already Prisma-shaped, schema, migrations, connection
-      pooling and the query engine come pre-wired.
-    limits: 500 MB storage, 100,000 operations, up to 50 databases.
+      App hosting on the same free plan: Prisma Compute runs a TypeScript app
+      next to the database. Any Postgres client connects; pooling is built in.
+    limits: >-
+      500 MB storage, 200,000 operations per month, up to 50 databases. Hard
+      cap and no backups on the free plan. Prisma Compute on the same plan,
+      TypeScript services only: 1M requests, 360 GB-hours of memory, 4 active
+      vCPU-hours and 10 GB of outbound bandwidth per month.
     source: https://www.prisma.io/pricing
-    verified: 2026-08-18
+    verified: 2026-10-06
 
   - name: CockroachDB Cloud (Basic)
     url: https://www.cockroachlabs.com/pricing/
