@@ -45,7 +45,7 @@ requires a sales conversation.
 | [Neon](https://neon.com/pricing) | named Free plan, described as permanent rather than a trial | compute suspends when a monthly allowance is exhausted | no | Copy-on-write branching. A branch of a 5 GB database costs almost nothing and appears in seconds, which makes per-pull-request databases practical. |
 | [Supabase](https://supabase.com/pricing) | named Free plan | project paused after 1 week of inactivity | no | Everything bolted around the database. Auth with row-level-security integration, object storage, realtime subscriptions and edge functions are all in the same free plan. |
 | [Aiven](https://aiven.io/pricing) | free plan on selected services | none stated; Aiven reserves the right to reclaim long-unused services | unclear | You get a dedicated VM rather than a slice of a shared cluster, and the same free plan shape covers MySQL, Valkey, OpenSearch and Kafka. |
-| [Prisma Postgres](https://www.prisma.io/pricing) | free plan | no time limit; hard cap on the free plan | no | App hosting on the same free plan: Prisma Compute runs a TypeScript app next to the database. Any Postgres client connects; pooling is built in. |
+| [Prisma Postgres](https://www.prisma.io/pricing) | free plan | no time limit; hard cap on the free plan | no | App hosting in the same project: Prisma Compute runs a TypeScript app next to the database, and the free plan covers both. Any Postgres client connects; pooling is built in. |
 | [CockroachDB Cloud (Basic)](https://www.cockroachlabs.com/pricing/) | monthly free allowance on the Basic tier | allowance resets monthly; compute scales to zero | unclear | Horizontal distribution. Multi-region placement and survive-a-node-loss semantics are part of the product rather than an add-on. |
 | [Render](https://render.com/docs/free) | free Postgres instance | expires 30 days after creation, then a 14-day grace period | no | Sitting next to the web service that uses it. If Render already runs your app, the database is one more resource in the same dashboard. |
 | [Railway](https://railway.com/pricing) | trial credit, not an ongoing free tier | 30-day trial credit, then a paid minimum | required to continue past the trial | Deploying arbitrary open-source database images. If you want Postgres 17 with a specific extension compiled in, Railway will run that container. |
@@ -100,7 +100,7 @@ included on the free plan. Source: [aiven.io/pricing](https://aiven.io/pricing).
 databases, no card, no time limit. The free plan has a hard cap and no backups.
 It is standard PostgreSQL 17 over the wire protocol with built-in connection
 pooling, so `psql`, node-postgres, Drizzle and Kysely connect as well as Prisma
-ORM. The same free plan includes app hosting for TypeScript services on
+ORM. The free plan also covers app hosting for TypeScript services on
 [Prisma Compute](https://www.prisma.io/compute): 1M requests, 360 GB-hours of
 memory, 4 active vCPU-hours and 10 GB of outbound bandwidth per month, and apps
 pause if a limit is passed. Read on 2026-10-06.
