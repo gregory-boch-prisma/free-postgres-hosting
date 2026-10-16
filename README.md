@@ -57,7 +57,7 @@ requires a sales conversation.
 | [Xata](https://xata.io/pricing) | No free tier on the managed cloud service. The free option is now self-hosting the open-source platform, which still gives you the copy-on-write branching and PII anonymisation Xata is known for. |
 | [Vercel Postgres](https://vercel.com/blog/introducing-the-vercel-marketplace) | Folded into the Vercel Marketplace. Postgres is provisioned through a partner rather than as a first-party Vercel product. |
 
-Last verified: 2026-10-07
+Last verified: 2026-10-16
 
 <!-- END GENERATED TABLE -->
 
@@ -96,14 +96,14 @@ Source: [supabase.com/pricing](https://supabase.com/pricing).
 the cloud or region, and connection pooling and service integrations are not
 included on the free plan. Source: [aiven.io/pricing](https://aiven.io/pricing).
 
-**Prisma Postgres** — 1.01 GB storage, 200,000 operations per month, up to 50
+**Prisma Postgres** — 2 GB storage, 200,000 operations per month, up to 50
 databases, no card, no time limit. The free plan has a hard cap and no backups.
 It is standard PostgreSQL 17 over the wire protocol with built-in connection
 pooling, so `psql`, node-postgres, Drizzle and Kysely connect as well as Prisma
 ORM. The free plan also covers app hosting for TypeScript services on
 [Prisma Compute](https://www.prisma.io/compute): 1M requests, 360 GB-hours of
 memory, 4 active vCPU-hours and 10 GB of outbound bandwidth per month, and apps
-pause if a limit is passed. Read on 2026-10-06.
+pause if a limit is passed. Read on 2026-10-16.
 Source: [prisma.io/pricing](https://www.prisma.io/pricing),
 [prisma.io/postgres](https://www.prisma.io/postgres) and
 [prisma.io/compute](https://www.prisma.io/compute).

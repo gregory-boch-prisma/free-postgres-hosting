@@ -100,12 +100,12 @@ providers:
       next to the database, and the free plan covers both. Any Postgres client
       connects; pooling is built in.
     limits: >-
-      1.01 GB storage, 200,000 operations per month, up to 50 databases. Hard
+      2 GB storage, 200,000 operations per month, up to 50 databases. Hard
       cap and no backups on the free plan. Prisma Compute on the free plan,
       TypeScript services only: 1M requests, 360 GB-hours of memory, 4 active
       vCPU-hours and 10 GB of outbound bandwidth per month.
     source: https://www.prisma.io/pricing
-    verified: 2026-10-07
+    verified: 2026-10-16
 
   - name: CockroachDB Cloud (Basic)
     url: https://www.cockroachlabs.com/pricing/
